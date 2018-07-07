@@ -5,6 +5,7 @@
  */
 package web;
 
+import suporte.BaseTestWeb;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import static org.testng.Assert.*;
@@ -14,7 +15,7 @@ import org.testng.annotations.Test;
  *
  * @author fernando.schwambach
  */
-public class EditarPessoaTest extends BaseTest {
+public class EditarPessoaTest extends BaseTestWeb {
 
     @Test
     public void editarPessoa() {

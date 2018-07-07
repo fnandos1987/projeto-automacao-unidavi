@@ -5,6 +5,7 @@
  */
 package web;
 
+import suporte.BaseTestWeb;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,7 +16,7 @@ import org.testng.annotations.Test;
  *
  * @author fernando.schwambach
  */
-public class RemoverPessoaTest extends BaseTest {
+public class RemoverPessoaTest extends BaseTestWeb {
 
     @Test
     public void removerPessoa() {

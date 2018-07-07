@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeMethod;
 
 /**
  *
- * @author 19294
+ * @author fernando.schwambach
  */
 public class BaseTestMobile {
 
