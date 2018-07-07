@@ -49,4 +49,16 @@ public class TelaEditarPO {
         return campoHobbies.getAttribute("text");
     }
 
+    public void informarValorCampoNome(String texto){
+        campoNome.sendKeys(texto);
+    }
+
+    public void informarValorCampoEndereco(String texto){
+        campoEndereco.sendKeys(texto);
+    }
+
+    public void informarValorCampoHobbies(String texto){
+        campoHobbies.sendKeys(texto);
+    }
+
 }

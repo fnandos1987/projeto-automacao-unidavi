@@ -45,6 +45,10 @@ public class TelaPrincipalPO {
         campoListado.click();
     }
 
+    public String retornarValorPessoaFiltrada(){
+        return campoListado.getAttribute("text");
+    }
+
     public void preencherCampoPesquisa(String texto) {
         campoPesquisa.sendKeys(texto);
     }

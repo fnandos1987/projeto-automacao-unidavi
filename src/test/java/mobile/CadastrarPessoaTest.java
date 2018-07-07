@@ -13,8 +13,10 @@ import io.appium.java_client.remote.MobilePlatform;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import mobile.pageobjects.TelaEditarPO;
 import mobile.pageobjects.TelaPrincipalPO;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 
 /**
@@ -42,6 +44,16 @@ public class CadastrarPessoaTest {
         TelaPrincipalPO telaPrincipal = new TelaPrincipalPO(driver);
         telaPrincipal.clicarEmAdicionar();
 
+        TelaEditarPO telaEditar = new TelaEditarPO(driver);
+        telaEditar.informarValorCampoNome("Clark Kent");
+        telaEditar.informarValorCampoEndereco("SmallVille");
+        telaEditar.informarValorCampoHobbies("voar");
+        telaEditar.clicarEmSalvar();
+
+        telaPrincipal.pesquisar("Clark Kent");
+        assertEquals(telaPrincipal.retornarValorPessoaFiltrada(), "Clark Kent");
+
+        driver.quit();
     }
 
 }
