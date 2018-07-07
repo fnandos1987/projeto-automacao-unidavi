@@ -14,7 +14,7 @@ import suporte.BaseTestMobile;
 
 /**
  *
- * @author 19294
+ * @author fernando.schwambach
  */
 public class CadastrarPessoaTest extends BaseTestMobile {
 
